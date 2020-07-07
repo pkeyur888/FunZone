@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rules</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- bxslider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<!-- WOW.js -->
+	<link rel="stylesheet" href="vendors/WOW-master/css/animate.css">
+	<script src="vendors/WOW-master/dist/wow.min.js"></script>
+
+	<!-- new animate.css --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="body.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+
+</head>
+<body style="color: background-color: #b9d0f8;">
+	<div id="main">
+
+		<header>
+			<div class="container" >
+				<div class="cover">
+					
+					<div><img src="img/c6.jpg"></div>
+					<div><img src="img/c1.jpg"></div>
+					<div><img src="img/c2.jpg"></div>
+					<div><img src="img/c3.jpg"></div>
+					<div><img src="img/c4.jpg"></div>
+					<div><img src="img/c5.jpg"></div>
+
+				</div>
+				<div class="navigation" id="myContainer">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="menu" id="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="price.html">price</a></li>
+							<li><a href="gallery.html">gallery</a></li>
+							<li><a href="rules.html">Rules</a></li>
+							<li><a href="reservation.html">Reservation</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
+
+						</ul>
+					</div>
+					<div>
+						<a href="javascript:void(0);"  class="menu-icon" onclick="menu()">
+							<!--  <img src="" alt="burger-menu"> -->
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+		<div class="heading_1">
+			<h1 class="wow fadeInUp" data-wow-duration="2s">" RULE #1 don't forget to follow the RULES "</h1>
+		</div>
+		<div class="about_6">
+			<div class="rules">
+				<p>Fun Zone Rules :-</p>
+				<ul>
+					<li>Socks must be warn at ALL times</li>
+					<li>A parent MUST be present at all times ; FUNZONE is NOT a daycare</li>
+					<li>Upon entry the parent acknowledges that they are fully responsible for their children; FUNZONE is NOT responsible for any accidental injuries</li>
+					<li>Children under the age of 4 MUST be accompanied by an adult in the play area AT ALL TIMES</li>
+					<li>Safe play in the amusement facility is mandatory</li>
+					<li>Please be friendly with each other, violence will NOT be tolerated verbally or physically in anyway</li>
+					<li>To ensure safety there will be no; throwing of the balls, running outside the play area or aggressive behavior</li>
+					<li>No outside toys will be permitted in the play area</li>
+					<li>Outdoor food and drink is NOT allowed; the FUNZONE snack bar is always open</li>
+				</ul>
+				<div class="rules_icon">
+					<div style="background: url('img/wear_socks.png') no-repeat center /cover;"></div>
+					<div style="background: url('img/safe_play.gif') no-repeat center /cover;"></div>
+					<div style="background: url('img/no_violence.jpg') no-repeat center /cover;"></div>
+					<div style="background: url('img/no_food.jpg') no-repeat center /cover;"></div>
+					
+				</div>
+			</div>
+			
+			
+		</div>
+		
+
+		
+		
+
+		<div class="footer">
+			<div class="icon">
+				<div>
+					<a href="https://www.facebook.com/zonedefunzonelasalle" target="_blank"><div class="i1"></div></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/funzonelasalle/" target="_blank"><div class="i2"></div></a>
+				</div>
+				<div>
+					<a href="https://twitter.com/funzonelasalle" target="_blank"><div class="i3"></div></a>	
+				</div>
+			</div>
+			<div class="copyR">
+				<p>Copyright &copy; 2020 FunZone - Design: <mark class="blue">Keyurkumar Patel & Anjali Patel</mark></p>
+			</div>
+			
+		</div>
+
+		
+		
+	</div>
+
+	<script>
+		new WOW().init();
+		$(document).ready(function(){
+
+			$('.cover').bxSlider({
+				mode: 'fade',
+				auto: 'true',
+				pause: '4000',
+				pager: false,
+
+			});
+
+		});
+
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myContainer");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+
+			} else {
+				header.classList.remove("sticky");
+
+			}
+		}
+
+		function menu() {
+			var x = document.getElementById("menu");
+			var nav=document.getElementById("myContainer");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				nav.style.backgroundColor="";
+			} else {
+				x.style.display = "block";
+				nav.style.backgroundColor="white";
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+.container{
+	position: relative;
+	width: 100%;	
+}
+
+.cover{
+	display: block;
+	/*clear: both;*/
+	height: 710px;
+	width: 90%;
+	margin: auto;
+	/*overflow: hidden;*/
+	
+}
+.cover div{
+	height: 90%;
+	width: 90%;
+}
+.cover div img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.bx-wrapper {
+    margin-bottom: 0px;
+    border: 0;
+ }
+
+.navigation{
+	display: flex;
+	flex-direction: row;
+	position:  absolute;
+	top:0px;
+	width: 100%;
+	height: 100px;
+}
+.logo{
+	width: 25%;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	left: 40px;
+}
+.logo img{
+	height: 160px;
+	width: 200px;
+}
+.sticky{
+	position: fixed;
+	top:0px;
+	background-color: #c6daff;
+}
+.menu{
+	display: none;
+	margin: auto;
+	margin-right: 100px;
+	position: absolute;
+    top: 25px;
+    right: 50px;
+	
+}
+.menu ul{
+	list-style-type: none;
+}
+.menu ul li{
+	margin: 0px 25px 10px 0px;
+	float: left;
+}
+.menu ul li a{
+	display: table-row;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ed1f80;
+	font-weight: bold;
+	transition: transform .2s;
+
+}
+.menu ul li a:hover{
+	color: #005bab;
+	transform: scale(1.1);
+	
+}
+.menu-icon{
+	position: absolute;
+	top:30px;
+	right: 80px;
+	height: 45px;
+	width: 60px;
+  	border-radius:40px; 
+}
+.menu-icon img{
+	
+}
+.menu-icon{
+	background: url('img/burger-menu.png') no-repeat center /cover;
+}
+
+
+/****************** Footer ******************/
+
+.footer{
+
+	height: 110px;
+	background-color: #303030;
+	padding-top: 30px;
+}
+.blue{
+	background :none;
+	font-weight: bold;
+	color: #026db7;
+}
+.icon{
+	height: 50px;
+	width: 200px;
+	margin: auto;
+	display: flex;
+}
+.icon div{
+	margin: auto;
+	height: 40px;
+	width: 40px;
+}
+.i1{
+	background: url('img/facebook.png') no-repeat center /cover;
+}
+.i2{
+	background: url('img/instagram.png') no-repeat center /cover;
+}
+.i3{
+	background: url('img/twitter.png') no-repeat center /cover;
+}
+.i1,.i2,.i3{
+	border-radius: 10px;
+	transition: transform .2s;
+}
+.i1:hover,.i2:hover,.i3:hover{
+	transform: scale(1.2);
+}
+.copyR p{
+	text-align: center;
+	color: #989798;
+}
+/* .footer p{
+	text-align: center;
+	color: #989798;
+	font-family: 'Bitter', serif;
+} */

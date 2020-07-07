@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+
+
+html, body{
+margin: 0;
+padding: 0;
+}
+
+#main{
+	/* height: 2000px; */
+	width: 100%;
+	margin: auto;
+	/* background-color: red; */
+	/* background : url('img/i1.jpg') no-repeat center /cover; */
+
+}
+
+
+/*********** css of page 1 (HOME) ***********/
+
+.heading_1{
+	clear: both;
+	height: 150px;
+	width: 100%;
+	background-color: #c6daff;
+
+}
+.heading_1 h1{
+	font-size: 45px;
+	text-align: center;
+	padding-top: 35px;
+	margin: 0px;
+	color: #990000;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.about_1{
+	/* height: 803px; */
+	width: 100%;
+	background-color: #c6daff;
+}
+.about_1 .a1,.about_1 .a2{
+	/* height: 398px; */
+	width: 80%;
+	margin: auto;
+	margin-bottom: 5px;
+	display: flex;
+	background-color: #c6daff;
+}
+.p1,.p2,.p3,.p4{
+	/* height: 400px; */
+	width: 49.9%;
+	
+}
+.p1{
+	background: url('img/img1_1.jpg') no-repeat center /cover;
+}
+
+.p2{
+	background-color: #0a5268;
+	color: white;
+}
+.p2 p , .p3 p ,.p4 p{
+	font-size: 35px;
+	text-align: center;
+	font-weight: bolder;
+	color: #89deee;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.p2 ul,.p3 ul,.p4 ul{
+	list-style-type: none;
+}
+.p2 ul li,.p3 ul li,.p4 ul li{
+	text-align: center;
+	margin: 5px 25px 5px 0px;
+	font-size: 25px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.p3{
+	background-color: #0a5268;
+	color: white;
+	
+}
+.p4{
+	background-color: #0a5268;
+	color: white;
+}
+.reserve_1{
+	height: 100px;
+	width: 100%;
+	/* margin: auto; */
+	background-color: #c6daff;
+	display: flex;
+	/* justify-content: center; */
+}
+.reserve_1 a{
+	margin: 20px 0px 0px 640px;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bolder;
+	background-color: #5a97aa;
+	padding: 10px;
+	height: 33px;
+	border-radius: 30px;
+	transition: transform .3s;
+	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.reserve_1 a:hover{
+	transform: scale(1.05);
+	background-color: #0a5268;
+}
+
+
+/* *********** css for page 2 (Schedule) ************ */
+
+.about_2{
+	height: 850px;
+	width: 100%;
+	background-color: #c6daff;
+	display: flex;
+	flex-direction: column;
+}
+.part1,.part2{
+	height: 400px;
+	width: 100%;
+	background-color: #c6daff;
+	display: flex;
+	flex-direction: row;
+}
+.img1{
+	height: 395px;
+	width: 50%;
+	background: url('img/img1_2.jpg') no-repeat center /cover;
+	margin-left: 30px;
+}
+.schedule1{
+	height: 395px;
+	width: 40%;
+	margin-left: 20px;
+}
+.schedule2{
+	height: 395px;
+	width: 40%;
+	margin-left: 100px;
+}
+.schedule1 p,.schedule2 p{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bolder;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #005980;
+}
+.schedule1 ul{
+	list-style-type: none;
+}
+.schedule1 ul li{
+	text-align: center;
+	margin: 5px 25px 5px 0px;
+	font-size: 25px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #a11e95;
+}
+.schedule2 table{
+	margin: auto;
+	width: 70%;
+}
+.schedule2 table tr{
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.schedule2 table tr td{
+	font-size: 25px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #a11e95;
+}
+.img2{
+	height: 395px;
+	width: 50%;
+	background: url('img/img2_2.jpg') no-repeat center /cover;
+	margin-left: 20px;
+}
+
+
+/* ******* CSS for page 3 (price) */
+
+.about_3{
+	/* height: 700px; */
+	padding-bottom: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: #c6daff;;
+}
+.about_3 .part3,.about_3 .part5{
+
+	/* height: 550px; */
+	width: 30%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.about_3 .part4{
+	/* height: 600px; */
+	width: 35%;
+	background-color: #72006a;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+}
+.part3 p,.part4 p,.part5 p{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-family: 'Alegreya Sans', sans-serif;
+
+}
+.details{
+	border: 2px dashed #72006a;
+	background-color: #fae1f8;
+	/* height: 130px; */
+	padding-bottom: 5px;
+	width: 80%;
+	margin: 20px 0px 0px 40px;
+	border-radius: 15px;
+	/* border-style:  */
+}
+p.party_price{
+	margin: 0px;
+	font-size: 25px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.part4 ul li{
+	/* text-align: center; */
+	font-size: 18px;
+	width: 100%;
+	margin: 10px 0px 15px 0px;
+	color: #fae1f8;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.details ul{
+	list-style-type: none;
+    margin: 10px 50px 0px 10px;
+}.details ul li{
+	font-size: 22px;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: bolder;
+}
+
+/* ******** css for page 4 (Gallery) ****************** */
+
+.description{
+	height: 300px;
+	width: 100%;
+	background-color: #ffbbbb;
+	text-align: center;
+	margin: auto;
+	clear: both;
+
+}
+.description p{
+	margin:   0px 0px 0px 0px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+.about_4{
+	height: 1250px;
+	width: 100%;
+	background-color: #c6daff;;
+	display: flex;
+	flex-direction: column;
+}
+.about_4 div{
+	height: 300px;
+	width: 95%;
+	margin: auto;
+	background-color: #c6daff;;
+	display: flex;
+	flex-direction: row;
+}
+.about_4 div div{
+	height: 250px;
+	width: 330px;
+	background-color: black;
+	margin: auto;
+	border-radius: 5%;
+	transition: transform .2s;
+	
+}
+.about_4 div div:hover{
+	transform: scale(1.02);
+}
+.image1{
+	background: url('img/gallery/i1.jpg') no-repeat center /cover;
+}
+.image2{
+	background: url('img/gallery/i2.jpg') no-repeat center /cover;
+}
+.image3{
+	background: url('img/gallery/i3.jpg') no-repeat center /cover;
+}
+.image4{
+	background: url('img/gallery/i4.jpg') no-repeat center /cover;
+}
+.image5{
+	background: url('img/gallery/i5.webp') no-repeat center /cover;
+}
+.image6{
+	background: url('img/gallery/i9.jpg') no-repeat center /cover;
+}
+.image7{
+	background: url('img/gallery/i7.jpg') no-repeat center /cover;
+}
+.image8{
+	background: url('img/gallery/i8.jpg') no-repeat center /cover;
+}
+.image9{
+	background: url('img/gallery/i12.jpg') no-repeat center /cover;
+}
+.image10{
+	background: url('img/gallery/i10.jpg') no-repeat center /cover;
+}
+.image11{
+	background: url('img/gallery/i11.jpg') no-repeat center /cover;
+}
+.image12{
+	background: url('img/gallery/i6.jpg') no-repeat center /cover;
+}
+.image13{
+	background: url('img/gallery/i13.jpg') no-repeat center /cover;
+}
+.image14{
+	background: url('img/gallery/i14.jpg') no-repeat center /cover;
+}
+.image15{
+	background: url('img/gallery/i15.jpg') no-repeat center /cover;
+}
+.image16{
+	background: url('img/gallery/i16.jpg') no-repeat center /cover;
+}
+
+
+
+/* *********** page 5 (reservation) *********** */
+.res-video{
+	width: 80%;
+	/* background-color: black; */
+	margin:auto;
+}
+.res-video iframe{
+	width: 90%;
+	height: 400px;
+	margin-left: 5%;
+	
+}
+.reservation{
+	width: 80%;
+	margin:auto;
+	padding-bottom: 20px;
+	background-color: pink; 
+}
+.display-form{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+}
+.form-button{
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 10px;
+	transition-duration: 0.4s; 
+	border-radius: 0px;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px; 
+}
+.form-button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+}
+.data-form{
+	/* display: none; */
+	width: 60%;
+	margin: auto;
+	margin-top: 15px;
+	border: 1px solid black;
+	background-color: honeydew;
+	align-items: center;
+	border-radius: 15px;
+}
+.form-title{
+	font-size: 20px;
+	text-align: center;
+    font-weight: bold;
+}
+.form-input{
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px auto;
+	margin-left: 10%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+  } 
+  .form-submit {
+	width: 50%;
+	font-size: 20px;;
+	background-color: #4CB0B6;
+	color: white;
+	padding: 14px 20px;
+	margin: 15px 0;
+	margin-left: 25%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  ::placeholder{
+	  color: black;
+  }
+  #reservation-form{
+	  display: block;
+  }
+   #subscribe-form{
+	   display: none;
+   }
+
+
+/* ************ page 6 (Rules) ************ */
+
+.about_6{
+	/* height: 800px; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.rules{
+	/* height: 750px; */
+	width: 50%;
+	border: 5px dashed red;
+	margin: auto;
+	border-radius: 10px;
+	background-color: #ffe6e6;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.rules p{
+	font-size: 40px;
+	margin: 35px 0px 0px 50px;
+}
+.rules li{
+	font-size: 22px;
+	margin: 15px 20px 0px 20px;
+}
+.rules_icon{
+	height: 100px;
+	width: 70%;
+	margin: auto;
+	margin-top: 35px;
+	display: flex;
+	flex-direction: row;
+}
+.rules_icon div{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+
+/* ************ page 7 *********** */
+
+.about_7{
+	height: 400px;
+	width: 80%;
+	border: 3px solid black;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.form_contact{
+	height: 350px;
+	width: 45%;
+	background-color: pink;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.form_contact input[type="text"]{
+	height: 30px;
+	width: 90%;
+	margin: 15px 0px 0px 20px;
+}
+.form_contact textarea{
+	height: 160px;
+	width: 90%;
+	margin: 15px 0px 0px 20px;
+}
+.form_contact input[type="submit"]{
+	height: 30px;
+	width: 200px;
+	margin: 15px 0px 0px 160px;
+	font-size: 18px;
+	align-content: center;
+}
+.box{
+	height: 350px;
+	width: 0.001%;
+	margin: auto;
+	border-left:  2px dotted red;
+}
+.info{
+	height: 350px;
+	width: 45%;
+	margin: auto;
+	display: inline-block;
+}
+.heading{
+	height: 100px;
+	width: 100%;
+}
+.heading p{
+	font-size: 22px;
+}
+.heading b{
+	font-size: 30px;
+	margin: 0px;
+}
+.details_contact{
+	height: 200px;
+	width: 100%;
+	
+	display: flex;
+	flex-direction:column;
+}
+
+.contactinfo1,.contactinfo2,.contactinfo3{
+	height: 60px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.icon_location,.icon_phone,.icon_email{
+	height: 25px;
+	width: 25px;
+	background-color: black;
+	margin: auto;
+}
+.icon_location{
+	background: url('img/location.png') no-repeat center /cover;
+}
+.icon_phone{
+	background: url('img/phone.png') no-repeat center /cover;
+}
+.icon_email{
+	background: url('img/mail.png') no-repeat center /cover;
+}
+.location,.phone,.email_contact{
+	height: 60px;
+	width: 455px;
+	
+	margin: auto;
+	padding-left: 3px;
+}
+.map_box{
+	/* height: 400px; */
+	width: 50%;
+	border: 2px solid blue;
+	margin:auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.map{
+	/* height: 380px; */
+	width: 98%;
+	/* background-color: red; */
+	margin: auto;
+	margin-top: 10px;
+}
+.map iframe{
+	width: 98%;
+}

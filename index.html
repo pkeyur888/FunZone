@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Menu -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- bxslider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<!-- WOW.js -->
+	<link rel="stylesheet" href="vendors/WOW-master/css/animate.css">
+	<script src="vendors/WOW-master/dist/wow.min.js"></script>
+
+	<!-- new animate.css --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="body.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+
+</head>
+<body style="color: background-color: #cbdeff;">
+	<div id="main">
+
+		<header>
+			<div class="container" >
+				<div class="cover">
+					<div><img src="img/c1.jpg"></div>
+					<div><img src="img/c2.jpg"></div>
+					<div><img src="img/c3.jpg"></div>
+					<div><img src="img/c4.jpg"></div>
+					<div><img src="img/c5.jpg"></div>
+					<div><img src="img/c6.jpg"></div>
+
+				</div>
+				<div class="navigation" id="myContainer">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="menu" id="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="price.html">price</a></li>
+							<li><a href="gallery.html">gallery</a></li>
+							<li><a href="rules.html">Rules</a></li>
+							<li><a href="reservation.html">Reservation</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
+
+						</ul>
+					</div>
+					<div>
+						<a href="javascript:void(0);"  class="menu-icon" onclick="menu()">
+							<!--  <img src="" alt="burger-menu"> -->
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+		<div class="heading_1">
+			<h1 class="wow fadeInUp" data-wow-duration="2s"><i>" Scroll to know us more... "</i></h1>
+		</div>
+		<div class="about_1">
+			<div class="a1">
+				<div class="p1 wow fadeInLeft" data-wow-duration="1s" style="margin-right: 4px"></div>
+				<div class="p2 wow fadeInRight" data-wow-duration="1s">
+					<p>About us</p>
+					<ul>
+						<li style="color: white" >Family fun center located in Lasalle, Quebec.</li>
+						<li style="color: #faee31" >Affordable prices for children aged 3 - 11. We have a top of the line play structure.</li>
+						<li style="color: white" >We host birthday parties and special events that you and your children will never forget!</li>
+						<li style="color: #faee31" >We also offer special availability upon reservation during the week for daycares and large groups.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="a2 wow">
+				<div class="p3 wow fadeInLeft" data-wow-duration="1s" style="margin-right: 4px">
+					<p>The Benefits</p>
+					<ul>
+						<li style="color: white" >FunZone encourages kids to reach the farthest reaches and climb the highest heights.</li>
+						<li style="color: #faee31">An hour in the family fun center, participating in a Zumba class, a gymnastics routine or a sports game!</li>
+						<li style="color: white">Today's parents are looking for a safe, fun and affordable environment to take their families.In today's fast paced society and it is important to provide a family friendly destination that is fun in our community. FunZone answers that demand.</li>
+						
+					</ul>
+				</div>
+				<div class="p4 wow fadeInRight" data-wow-duration="1s">
+					<p>About Employment</p>
+					<ul>
+						<li style="color: white">FunZone is a Team Oriented, friendly work environment that offers a flexible schedule and part time hours. We are looking for candidates who are bilingual, resourceful, and energetic and are interested in the following positions:</li>
+						<li style="color: #faee31" >Animators</li>
+						<li style="color: #faee31" >Reception</li>
+						<li style="color: #faee31">Snack Bar</li>
+						<li style="color: white">Come and join the FunZone family!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="reserve_1">
+			<a href="reservation.html">Make a Reservation</a>
+		</div>
+
+		<div class="footer">
+			<div class="icon">
+				<div>
+					<a href="https://www.facebook.com/zonedefunzonelasalle" target="_blank"><div class="i1"></div></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/funzonelasalle/" target="_blank"><div class="i2"></div></a>
+				</div>
+				<div>
+					<a href="https://twitter.com/funzonelasalle" target="_blank"><div class="i3"></div></a>	
+				</div>
+			</div>
+			<div class="copyR">
+				<p>Copyright &copy; 2020 FunZone - Design: <mark class="blue">Keyurkumar Patel & Anjali Patel</mark></p>
+			</div>
+			
+		</div>
+
+		
+		
+	</div>
+
+	<script>
+		new WOW().init();
+		$(document).ready(function(){
+
+			$('.cover').bxSlider({
+				mode: 'fade',
+				auto: 'true',
+				pause: '4000',
+				pager: false,
+
+			});
+
+		});
+
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myContainer");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+
+			} else {
+				header.classList.remove("sticky");
+
+			}
+		}
+
+
+
+		function menu() {
+			var x = document.getElementById("menu");
+			var nav=document.getElementById("myContainer");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				nav.style.backgroundColor="";
+			} else {
+				x.style.display = "block";
+				nav.style.backgroundColor="white";
+			}
+		}
+	</script>
+
+</body>
+</html>

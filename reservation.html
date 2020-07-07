@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- bxslider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<!-- WOW.js -->
+	<link rel="stylesheet" href="vendors/WOW-master/css/animate.css">
+	<script src="vendors/WOW-master/dist/wow.min.js"></script>
+
+	<!-- new animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="body.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+
+</head>
+
+<body style="color: background-color: #b9d0f8;">
+	<div id="main">
+
+		<header>
+			<div class="container">
+				<div class="cover">
+
+					<div><img src="img/c4.jpg"></div>
+					<div><img src="img/c5.jpg"></div>
+					<div><img src="img/c6.jpg"></div>
+					<div><img src="img/c1.jpg"></div>
+					<div><img src="img/c2.jpg"></div>
+					<div><img src="img/c3.jpg"></div>
+
+				</div>
+				<div class="navigation" id="myContainer">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="menu" id="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="price.html">price</a></li>
+							<li><a href="gallery.html">gallery</a></li>
+							<li><a href="rules.html">Rules</a></li>
+							<li><a href="reservation.html">Reservation</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
+
+						</ul>
+					</div>
+					<div>
+						<a href="javascript:void(0);" class="menu-icon" onclick="menu()">
+							<!--  <img src="" alt="burger-menu"> -->
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+		<div class="heading_1">
+			<h1 class="wow fadeInUp" data-wow-duration="2s">" Do your Reservation and feel the space "</h1>
+		</div>
+
+		<div class="res-video">
+			<iframe  src="https://www.youtube.com/embed/awwaxWWz0XA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="reservation">
+			<div class="display-form">
+				<button class="form-button" id="reservationBtn" onclick="openReserve()">Reservation</button>
+				<button class="form-button" id="subscribeBtn" onclick="openSubscribe()">Subscribe for offers</button>
+			</div>
+			<div class="data-form" id="reservation-form">
+				<p class="form-title">Reservation form</p>
+				<form action="#" method="post" >
+					<input type="text" id="name" name="name"  class="form-input"  placeholder="Enter name ">
+					<input type="email" id="email" name="email" class="form-input"   placeholder="Enetr email">
+					<input type="number" name="tel"  class="form-input"   placeholder="Enter ehone number">
+					<input type="number" name="child" class="form-input"   placeholder="Enter number of children">
+					<input type="number" name="adults" class="form-input"   placeholder="Enter number of adults">
+					<input type="datetime-local" name="date" class="form-input"   placeholder="Enter date and dime ">
+					<textarea cols="30" rows="10" name="message" class="form-input"   placeholder="Enter your message here..."></textarea>
+					<input type="submit" value="Submit Reservation" class="form-submit" name="submitReservation" >
+				</form>
+			</div>
+			<div class="data-form" id="subscribe-form">
+				<p class="form-title">Subscribe form</p>
+				<form action="#" method="post" >
+					<input type="text" id="name" name="name" class="form-input"   placeholder="Enter name ">
+					<input type="email" id="email" name="email" class="form-input"   placeholder="Enter email">
+					<input type="date" name="date" placeholder="Enter date" class="form-input" >
+					<input type="submit" value="Subscribe for offers" name="subscribe" class="form-submit" >
+				</form>	
+			</div>
+
+		</div>
+
+
+
+
+
+		<div class="footer">
+			<div class="icon">
+				<div>
+					<a href="https://www.facebook.com/zonedefunzonelasalle" target="_blank">
+						<div class="i1"></div>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/funzonelasalle/" target="_blank">
+						<div class="i2"></div>
+					</a>
+				</div>
+				<div>
+					<a href="https://twitter.com/funzonelasalle" target="_blank">
+						<div class="i3"></div>
+					</a>
+				</div>
+			</div>
+			<div class="copyR">
+				<p>Copyright &copy;  2020 FunZone - Design: <mark class="blue">Keyurkumar Patel & Anjali Patel</mark></p>
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+	<script>
+
+
+
+		new WOW().init();
+		$(document).ready(function () {
+			document.getElementById("reservationBtn").disabled = true;
+			$('.cover').bxSlider({
+				mode: 'fade',
+				auto: 'true',
+				pause: '4000',
+				pager: false,
+
+			});
+
+		});
+
+		window.onscroll = function () { myFunction() };
+
+		var header = document.getElementById("myContainer");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+
+			} else {
+				header.classList.remove("sticky");
+
+			}
+		}
+
+		function menu() {
+			var x = document.getElementById("menu");
+			var nav = document.getElementById("myContainer");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				nav.style.backgroundColor = "";
+			} else {
+				x.style.display = "block";
+				nav.style.backgroundColor = "white";
+			}
+		}
+
+		function openSubscribe(){
+			let reservation=document.getElementById("reservation-form");
+			let subscribe=document.getElementById("subscribe-form");
+
+			document.getElementById("reservationBtn").disabled=false;
+			document.getElementById("subscribeBtn").disabled=true;
+			
+			subscribe.style.display="block";
+			reservation.style.display="none";
+
+		}
+
+
+		
+		function openReserve(){
+			let reservation=document.getElementById("reservation-form");
+			let subscribe=document.getElementById("subscribe-form");
+
+			document.getElementById("reservationBtn").disabled=true;
+			document.getElementById("subscribeBtn").disabled=false;
+
+			subscribe.style.display="none";
+			reservation.style.display="block";
+
+		}
+		// function openSubscribe(){
+		// 	var subscribe=document.getElementById("subscribe-form");
+		// 	if(subscribe.style.display==="block"){
+		// 		subscribe.style.display = "none";
+		// 	}
+		// 	else{
+		// 		subscribe.style.display = "block";
+		// 	}
+		// }
+	</script>
+
+</body>
+
+</html>
