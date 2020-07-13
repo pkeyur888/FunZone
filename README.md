@@ -16,7 +16,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Contributer Team : Keyurkumar Patel and Anjali Patel
+## Contributer Team 
+Keyurkumar Patel and Anjali Patel
 
 ## License
 All rights reserved by the team.
